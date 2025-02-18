@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script>
+        function get_members() {
+            return ['shshin', '12345', 'shinsono'];
+        }
+        members = get_members();
+
+        for (i = 0; i < members.length; i++) {
+            document.write(members[i].toUpperCase());
+            document.write('<br />');
+        }
+
+        //li.concat ['f' , 'g'] push와는 다른 배열을 담는 추가 식
+        //li.unshift ('z') z가 제일 먼저 삽입된다. ex ) z f g
+        //li.splice(2,0,a) ex) z,f,a,g 2번 인덱스 에 추가 0 은 값을 안지우겠다는 뜻 1은 그 자리 값 지움
+        //push <-> pop
+        //li.sort(); 순서대로 정렬해줌 li.reverse() 역순으로 정리해줌
+    </script>
+</body>
+
+</html>

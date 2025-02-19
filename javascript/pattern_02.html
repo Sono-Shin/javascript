@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script>
+        var pattern = /a/
+        var str = 'abcdef'
+        str.match(pattern)
+        //["a"] 출력
+
+        var pattern = /a/
+        var str = 'bcdef'
+        str.match(pattern)
+        //null 출력
+
+        var str = 'abcdef'
+        str.replace(pattern, 'A')
+        //"Abcdef" 출력
+
+        var xi = /a/;
+        "Abcde".match(xi);
+        //null
+
+        var oi = /a/i; // i를 주게되면 대소문자 구분 X 
+        "Abcde".match(oi);
+        //["A"]
+
+
+        var xg = /a/;
+        "abcdea".match(xg);
+        //["a"]
+
+        var og = /a/;
+        "abcdea".match(og);
+        //["a" , "a"] //모든 문자를 찾아준다.
+    </script>
+</body>
+
+</html>

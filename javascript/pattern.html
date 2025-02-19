@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script>
+        // [exec] 정규표현식이 찾고자 하는 정보를 대상에서 찾아주고 배열로 리턴해줌
+        //1.
+        var str = "a";
+        var pattern = /a/; //정규표현식 패턴이란 변수 안에 담기
+        var pattern = new RegExp('a'); //정규표현식 객체 생성자
+        //2.
+        var str = "/a/";
+        patten.exec('abcde');
+        // [a] 출력
+        //3.
+        var pattern = /a./; //.은 문자라고 생각함
+        pattern.exec('abcde')
+        // [ab]
+
+        // [test] 찾는 정보가 있는지 없는지 테스트합니다.
+
+        var str = "/a/";
+        patten.exec('abcde');
+        //true 출력
+
+    </script>
+</body>
+
+</html>

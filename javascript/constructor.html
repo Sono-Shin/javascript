@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script>
+        function Person(name) {
+            this.name = name;
+            this.introduce = function () {
+                return 'My name is ' + this.name;
+            }
+        }
+        var p1 = new Person('sono1'); //함수에 new 를 붙이면 리턴값은 객체가 된다. 
+        document.write(p1.introduce() + "<br />");
+
+        var p2 = new Person('sono2'); //생성자 
+        document.write(p2.introduce());
+    </script>
+</body>
+
+</html>

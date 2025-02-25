@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script>
+        var o = {}
+        var p = {}
+        function func() {
+            switch (this) {
+                case o:
+                    document.write('o<br />');
+                    break;
+                case p:
+                    document.write('p<br />');
+                    break;
+                case window:
+                    document.write('window<br />');
+                    break;
+            }
+        }
+        func(); //this 에 값은 window 를 의미한다.
+        func.apply(o); //.apply => 표준 메소드  
+        func.apply(p);
+    </script>
+</body>
+
+</html>
